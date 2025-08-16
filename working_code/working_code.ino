@@ -78,7 +78,7 @@ Serial.println("ATE0");
 delay(1000);  
 Serial.println("AT+CMGF=1");    
 delay(1000);   
-Serial.print("AT+CMGS=\"9666189396\"\r\n");// Replace x with mobile number
+Serial.print("AT+CMGS=\"XXXXXXXXXX\"\r\n");// Replace x with mobile number
 delay(1000);
 Serial.println("Alert: VEHICLE OVER SPEED DETECTED at Loc:");
 
