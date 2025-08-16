@@ -47,7 +47,7 @@ void loop() {
     lcd.print(speed, 2);  // Display speed up to 2 decimal places
     lcd.print(" km/h");
 
-    if(speed>20 || digitalRead(sw)==0)
+    if(speed>50 || digitalRead(sw)==0) //set the spped limit
     {
       digitalWrite(buz,1);
       delay(1000);
@@ -87,7 +87,7 @@ Serial.println("Alert: VEHICLE OVER SPEED DETECTED at Loc:");
 delay(100);
 Serial.println((char)26);// ASCII code of CTRL+Z
 delay(5000);
-Serial.println("ATD9666189396;");
+Serial.println("ATDXXXXXXXXXX;");
 delay(30000);
 
 }
